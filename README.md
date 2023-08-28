@@ -9,7 +9,7 @@ What is the average price of a home for each year that has three bedrooms, three
 
 What is the "view" rating for homes costing more than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
 
-#  METHODOLOGY
+###  METHODOLOGY
 | Created a temporary view of the data frame
 
 |  four_bedroom = """
@@ -22,6 +22,7 @@ GROUP BY YEAR
 ORDER BY YEAR DESC
 """
 spark.sql(four_bedroom).show()
+
 
 start_time = time.time()
 rating_avg = """
